@@ -1,0 +1,149 @@
+<!-- Added file and note system. Took from states.html in foundations of programming lesson 2 SC 1/14/2023 10:27 PM -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>States</title>
+  <!-- bootstrap elements -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+  <style>
+    .custom-cont {
+      font: 1em sans-serif;
+      flex-direction: column;
+      padding: 15px;
+      outline: 2px blue;
+    }
+/*     
+    .light-blue-accordion-button {
+      background-color: lightblue;
+    } */
+  </style>
+  <div class="container justify-content-end align-items-center p-3">
+    <div class="h1 custom-h1"></div>
+    <h1>Bootstrap Sandbox</h1>
+
+    <div class="p">This is a handy guide for using bootstrap for your projects going forward. Bootstrap allows you to style your pages without needing to use css.
+    </div>
+    <ul>
+      <li>Chicago</li>
+        <li>Phoenix</li>
+        <li>Detroit</li>
+        <li>Atlanta</li>
+        <li>Los Angeles</li>
+        <li>Seattle</li>
+        <li>Houston</li>
+        <li>Boston</li>
+        <li>New York</li>
+  </ul>
+
+<h3>using bootstrap</h3>
+  <ul>
+    <li>
+      To center a div, use class=justify-content-center align-items-center
+    </li>    
+    <li>To include padding in a class in bootstrap, use p-3 where 3 is the number of pixels</li>
+    <li>The container grid is based on 12 columns</li>
+      <ul>
+        <li>class=col-sm-4 sets that class to take up 4/12 available columns when viewed in small screens</li>
+        <li>class=col-md-8 sets that class to take up 8/12 available columns when viewed on medium screens</li>
+        <li>class=col-lg-2 sets that class to take up 2/12 available columns when viewed on large screens</li>    
+        <li>class=col-sm-12 col-md-6 col-lg-2 sets the class for each space</li>         
+      </ul>
+      <li>Detroit</li>
+      <li>Atlanta</li>
+      <li>Los Angeles</li>
+      <li>Seattle</li>
+      <li>Houston</li>
+      <li>Boston</li>
+      <li>New York</li>
+</ul>
+  <div class="p">Remember that our class will meet M-F for the next four weeks from 5:30pm to 9:30pm central. I will bookmark our Zoom link within our Slack channel. If one of your friends is interested in code platoon tell them to check out our website here.</div>
+  </div>
+<!-- 
+Problem: The collapse plugins are not responding when I load the site -->
+<div class="container justify-content-center align-items-end">
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button light-blue-accordion-button btn-primary rounded" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong>It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any html can go within the <code>.accordion-body</code>,though the transiotn does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button light-blue-accordion-button btn-primary rounded collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the item's accordion body.</strong> it is hidden by default until the collapse plgin adds the appropriate classes that we use to style each element. These classes control the overal appearance as well as showing and hiding via CSS transiotn. Can modify this with custom CSS or overriding default variables. Worth noting that just about any html can go within the <code>.accordion-body</code> though the transition does limit overflow
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button 
+                btn-primary rounded collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong>It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any html can go within the <code>.accordion-body</code>,though the transiotn does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- bootstrap elements -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Debugging suggestion for accordion -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+<!-- Debugging notes on bootstrap collapse issues:
+  It's possible I'm not using the bootstrap JS file, necessary for the feature to work.
+  Also Im using the data-bs-* attributes that are not part of bootstraps collapse, it should be data-toggle and data-target instead. 
+
+  Try adding this to the bootom before the closing </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  Then change the data-bs-toggle to data-toggle and data-bs-target to data-target
+
+  also wrap the js code with a window.onload function
+
+  make sure bootstrap CSS file and JS file are loaded -->
+
+  <!-- Rounding buttons:
+  Say you want to round buttons you have two options, using CSS or using the .rounded class in Bootstrap. 
+
+1) In the style add:
+.round-buttons {
+  border-radius: 25px;
+}
+
+2) in the button class add 'btn-primary rounded':
+<button class="accordion-button btn btn-primary rounded" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> -->
+
+
